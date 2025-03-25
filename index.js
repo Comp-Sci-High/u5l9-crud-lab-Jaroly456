@@ -10,9 +10,10 @@ app.use((req, res, next) => {
   next();
 });
 
-app.set("view engine", "ejs");
-
 app.use(express.json());
+
+app.set('view engine', 'ejs');
+
 
 const countrySchema = new mongoose.Schema({
   country: { type: String },
